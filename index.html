@@ -3,80 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Valentine’s Day ❤️</title>
+  <title>Happy Valentine's Day ❤️</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      color: #333;
+      color: #fff;
       text-align: center;
     }
+
     header {
-      padding: 40px 20px;
+      padding: 60px 20px 30px;
     }
-    header h1 {
-      font-size: 2.5em;
+
+    h1 {
+      font-size: 3rem;
       margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.2em;
+
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 40px;
+      padding: 40px 20px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: auto;
     }
-    .gallery img {
-      width: 100%;
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
       border-radius: 20px;
+      padding: 15px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
     }
-    .message {
-      padding: 30px 20px 60px;
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      max-height: 350px;
+    }
+
+    .love-note {
       max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.2em;
+      margin: 20px auto 80px;
+      font-size: 1.3rem;
       line-height: 1.6;
+      padding: 0 20px;
     }
+
     footer {
-      padding: 20px;
-      font-size: 0.9em;
+      padding: 30px;
+      font-size: 0.9rem;
       opacity: 0.8;
+    }
+
+    .heart {
+      animation: pulse 1.5s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Happy Valentine’s Day ❤️</h1>
-    <p>This is small, but like you mean everything to me , really.</p>
+    <h1>Happy Valentine's Day <span class="heart">❤️</span></h1>
+    <div class="subtitle">Made with love, just for you.</div>
   </header>
 
   <section class="gallery">
-    <img src="IMG_0645.jpg" alt="Photo 1" />
-    <img src="IMG_0638.jpg" alt="Photo 2" />
-    <img src="IMG_0642.jpg" alt="Photo 3" />
+    <div class="card">
+      <img src="IMG_0649.jpg" alt="Photo 1" />
+    </div>
+    <div class="card">
+      <img src="IMG_0638.jpg" alt="Photo 2" />
+    </div>
+    <div class="card">
+      <img src="IMG_0642.jpg" alt="Photo 3" />
+    </div>
   </section>
 
-  <section class="message">
-    <p>
-      I know that i'm not the best person ever , i do mistakes but i alwaysq try to improve and to do my best to be the best for you and only you.
-      Thank you for staying with me i truely couldn't have done this without you.
-    </p>
-    <p>
-      Thank you for being you, for staying, and for making my life brighter just
-      by being in it as you are.
-    </p>
-    <p>
-      I love you. 💖
-    </p>
-  </section>
+  <div class="love-note">
+    I know I should've prepared earlier… but even last minute, I just wanted to make something cute for you. 💕<br/><br/>
+    You make my days better, my nights warmer, and my life way more fun.
+    <br/><br/>
+    Happy Valentine's Day — I love you. ❤️
+  </div>
 
   <footer>
-    Nigga i had problems and i did this at like 3am ily,
+    Forever yours ✨
   </footer>
 </body>
 </html>
